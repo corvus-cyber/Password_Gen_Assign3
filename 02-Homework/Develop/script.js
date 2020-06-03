@@ -7,27 +7,42 @@ function writePassword() {
   var upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var num="012344556789";
   var symbol="!@#$%^&*()~+=.-";
-  var passwordLength = prompt("How many characters do you want for you password? Note: Must be between 8 to 128.") 
-  if (passwordLength > 7 && (passwordLength < 129) & (! passwordLength)) {
-    console.log(PasswordLength);
-  } else {alert("Choose a length that is between 8 to 128 characters")};
-  var passwordUpper = confirm("Do you want upper case letters in your password?");
-  var passwordLower = confirm("Do you want lower case letters in your password?");
-  var passwordSpecial = confirm("Do you want special characters in your password?");
-  var passwordNumber = confirm("Do you want numbers in your password?");
 
-        if (passwordUpper) {
-          console.log(upper)
-        };
-        if (passwordLower) {
-          console.log(lower)
-        };
-        if (passwordSpecial) {
-          console.log(symbol)
-        };
-        if (passwordNumber) {
-          console.log(num)
-        };
+  //Password length question
+  var passwordLength = prompt("How many characters do you want for you password? Note: Must be between 8 to 128.") 
+  if (passwordLength > 7 && (passwordLength < 129)) {
+    console.log(passwordLength);
+  } else {alert("Choose a length that is between 8 to 128 characters");
+    main() }
+ 
+
+  //Password Upper Case question
+  var passwordUpper = confirm("Do you want upper case letters in your password?");
+  if (passwordUpper) {
+    console.log(upper)
+  };
+
+  //Password Lower Case question
+  var passwordLower = confirm("Do you want lower case letters in your password?");
+  if (passwordLower) {
+    console.log(lower)
+  };
+
+  //Password Upper Case question
+  var passwordSpecial = confirm("Do you want special characters in your password?");
+  if (passwordSpecial) {
+    console.log(symbol)
+  };
+
+  //Password Number question
+  var passwordNumber = confirm("Do you want numbers in your password?");
+  if (passwordNumber) {
+    console.log(num)
+  };
+        
+
+
+
 
 
 
