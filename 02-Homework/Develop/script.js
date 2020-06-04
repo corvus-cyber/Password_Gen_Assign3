@@ -4,7 +4,7 @@ var Upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
 var Lower= "abcdefghijklmnopqrstuvwxyz";
 var num= 1234567890;
 var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-
+var reject= "try again weiner"
 
 
 // Assignment Code
@@ -30,43 +30,48 @@ function createPassword() {
   if (passwordLength > 7 && (passwordLength < 129)) {
     console.log(passwordLength) } 
     else {alert("Choose a length that is between 8 to 128 characters");
-    return;
+    return reject;
   }
   //
   uppercase = confirm("Do you want to include uppercase letters in your password?");
   if (uppercase) {
     developPassword += Upper;
-    console.log(developPassword) }
-    else {alert("Uppercase letters will not be included in your password")
+    console.log(developPassword);
+   }
+    else {alert("Uppercase letters will not be included in your password");
   }
 
   lowercase = confirm("Do you want to include lowercase letters in your password?");
   if (lowercase) {
     developPassword += Lower;
-    console.log(developPassword) }
-    else {alert("Lowercase letters will not be included in your password") 
+    console.log(developPassword); 
+  }
+    else {alert("Lowercase letters will not be included in your password"); 
   }
     
   numbers = confirm("Do you want to include numbers in your password?");
   if (numbers) {
     developPassword += num;
-    console.log(developPassword)}
-  else {alert("Numbers will not be included in your password")
+    console.log(developPassword);
+  }
+  else {alert("Numbers will not be included in your password");
   }
 
   characters = confirm("Do you want to include special characters in your password?");
   if (characters) {
     developPassword += special;
-    console.log(developPassword)}
-  else {alert("Special characters will not be included in your password")
+    console.log(developPassword);
+  }
+  else {alert("Special characters will not be included in your password");
   }
 
 
   for (var i = 1; i <=passwordLength; i++) {
     finalPassword += developPassword.charAt(Math.floor(Math.random() * developPassword.length));
-    console.log(finalPassword)
-    alert("Your password is ready")
+    console.log(finalPassword);
   }
+  alert("Your password is ready!");
+
   return finalPassword;
 
 
