@@ -30,55 +30,41 @@ function createPassword() {
     else {alert("Choose a length that is between 8 to 128 characters");
     return;
   }
-//
+  //
   uppercase = confirm("Do you want to include uppercase letters in your password?");
   if (uppercase) {
-    developPassword += Upper
+    developPassword += Upper;
     console.log(developPassword) } 
     else {alert("Your password will not contain uppercase characters");
   }
 
   lowercase = confirm("Do you want to include lowercase letters in your password?");
   if (uppercase) {
-    developPassword += Lower
+    developPassword += Lower;
     console.log(developPassword) } 
     else {alert("Your password will not contain lowercase characters");
   }
     
   numbers = confirm("Do you want to include numbers in your password?");
   if (uppercase) {
-    developPassword += num
+    developPassword += num;
     console.log(developPassword) } 
     else {alert("Your password will not contain numbers");
   }
 
   characters = confirm("Do you want to include special characters in your password?");
   if (uppercase) {
-    developPassword += special
+    developPassword += special;
     console.log(developPassword) } 
-    else {alert("Your password will not contain special characters");
-
-  
-
-    
-
-  
-
-
-
-
-
-
-
- 
- 
-
- 
+    else {alert("Your password will not contain special characters")
   }
 
-for (var i = 1; i <=passwordLength; i++) {
+
+  for (var i = 1; i <=passwordLength; i++) {
+    finalPassword += developPassword.chatAt(Math.floor(Math.random() * developPassword.length));
+    console.log(finalPassword)
+  }
+
 
 }
-
-  //Fourteen total possibilities for 
-
+    
