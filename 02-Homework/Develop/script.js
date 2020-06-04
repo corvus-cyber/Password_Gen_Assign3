@@ -1,9 +1,16 @@
+var developPassword= "";
+var Upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+var Lower= "abcdefghijklmnopqrstuvwxyz";
+var num= 1234567890;
+var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = createPassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -23,12 +30,40 @@ function createPassword() {
     else {alert("Choose a length that is between 8 to 128 characters");
     return;
   }
+//
+  uppercase = confirm("Do you want to include uppercase letters in your password?");
+  if (uppercase) {
+    developPassword += Upper
+    console.log(developPassword) } 
+    else {alert("Your password will not contain uppercase characters");
+  }
+
+  lowercase = confirm("Do you want to include lowercase letters in your password?");
+  if (uppercase) {
+    developPassword += Lower
+    console.log(developPassword) } 
+    else {alert("Your password will not contain lowercase characters");
+  }
+    
+  numbers = confirm("Do you want to include numbers in your password?");
+  if (uppercase) {
+    developPassword += num
+    console.log(developPassword) } 
+    else {alert("Your password will not contain numbers");
+  }
+
+  characters = confirm("Do you want to include special characters in your password?");
+  if (uppercase) {
+    developPassword += special
+    console.log(developPassword) } 
+    else {alert("Your password will not contain special characters");
 
   
+
     
 
+  
 
-}
 
 
 
@@ -38,31 +73,7 @@ function createPassword() {
  
  
 
-  // Loop over every question object
-  for (var i = 0; i < questions.length; i++) {
-    // Display current question to user and ask OK/Cancel
-    var answer = confirm(questions[i].q);
-
-    // lowercase
-    if (answer === true && questions[i].a === "true1") {
-      console.log(detail1);
-      alert("Sounds good!"); 
-    };
-    //uppercase
-    if (answer === true && questions[i].a === "t") {
-      console.log(detail2);
-      alert("Sounds good!"); 
-    };
-    //symbols
-    if (answer === true && questions[i].a === "t") {
-      console.log(detail3);
-      alert("Sounds good!"); 
-    };
-    //numbers
-    if (answer === true && questions[i].a === "t") {
-      console.log(detail4);
-      alert("Sounds good!"); 
-    };
+ 
   }
 
 for (var i = 1; i <=passwordLength; i++) {
