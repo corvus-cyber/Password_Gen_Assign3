@@ -2,67 +2,69 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-var lower= "abcdefghijklmnopqrstuvwxyz";
-var upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var num="012344556789";
-var symbol="!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
- 
+  passwordText.value = password;
 
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+
+
+function createPassword() {
   //Password length question
-
-  
   var passwordLength = prompt("How many characters do you want for you password? Note: Must be between 8 to 128.") 
   if (passwordLength > 7 && (passwordLength < 129)) {
     console.log(passwordLength)
-    //send it to password collection entry;
+    
+
+
+}
+
+
+
+
+
 
   } else {alert("Choose a length that is between 8 to 128 characters");
     return;
   }
  
 
-  //Password Upper Case question
-  var passwordUpper = confirm("Do you want upper case letters in your password?");
-  if (passwordUpper) {
-    console.log(upper);
-    //send it to password collection entry
-  };
+  // Loop over every question object
+  for (var i = 0; i < questions.length; i++) {
+    // Display current question to user and ask OK/Cancel
+    var answer = confirm(questions[i].q);
 
-  //Password Lower Case question
-  var passwordLower = confirm("Do you want lower case letters in your password?");
-  if (passwordLower) {
-    console.log(lower);
-    //send it to password collection entry
-  };
+    // lowercase
+    if (answer === true && questions[i].a === "true1") {
+      console.log(detail1);
+      alert("Sounds good!"); 
+    };
+    //uppercase
+    if (answer === true && questions[i].a === "t") {
+      console.log(detail2);
+      alert("Sounds good!"); 
+    };
+    //symbols
+    if (answer === true && questions[i].a === "t") {
+      console.log(detail3);
+      alert("Sounds good!"); 
+    };
+    //numbers
+    if (answer === true && questions[i].a === "t") {
+      console.log(detail4);
+      alert("Sounds good!"); 
+    };
+  }
 
-  //Password Upper Case question
-  var passwordSpecial = confirm("Do you want special characters in your password?");
-  if (passwordSpecial) {
-    console.log(symbol);
-    //send it to password collection entry
-  };
+for (var i = 1; i <=passwordLength; i++) {
 
-  //Password Number question
-  var passwordNumber = confirm("Do you want numbers in your password?");
-  if (passwordNumber) {
-    console.log(num);
-    //send it to password collection entry
-  };
-
-
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-  //
 }
 
-for (var i=0; i < 1; i++){
-  var number = Math.floor(Math.random()*10);
-  console.log(number)
-}
+  //Fourteen total possibilities for 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword)
