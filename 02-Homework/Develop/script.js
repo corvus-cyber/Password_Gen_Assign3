@@ -1,8 +1,10 @@
 var developPassword= "";
+var finalPassword= "";
 var Upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
 var Lower= "abcdefghijklmnopqrstuvwxyz";
 var num= 1234567890;
 var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+
 
 
 // Assignment Code
@@ -61,7 +63,7 @@ function createPassword() {
 
 
   for (var i = 1; i <=passwordLength; i++) {
-    finalPassword += developPassword.chatAt(Math.floor(Math.random() * developPassword.length));
+    finalPassword += developPassword.charAt(Math.floor(Math.random() * developPassword.length));
     console.log(finalPassword)
   }
 
