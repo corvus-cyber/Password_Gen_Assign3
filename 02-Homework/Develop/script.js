@@ -1,10 +1,8 @@
-var developPassword= "";
-var finalPassword= "";
 var Upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
 var Lower= "abcdefghijklmnopqrstuvwxyz";
 var num= 1234567890;
 var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-var reject= "try again weiner"
+var reject= "please try again"
 
 
 // Assignment Code
@@ -26,6 +24,9 @@ generateBtn.addEventListener("click", writePassword);
 
 function createPassword() {
   //Password length question
+  passwordLength = undefined;
+  var developPassword = "";
+  var finalPassword = ""; 
   var passwordLength = prompt("How many characters do you want for you password? Note: Must be between 8 to 128.") 
   if (passwordLength > 7 && (passwordLength < 129)) {
     console.log(passwordLength) } 
@@ -69,11 +70,22 @@ function createPassword() {
   for (var i = 1; i <=passwordLength; i++) {
     finalPassword += developPassword.charAt(Math.floor(Math.random() * developPassword.length));
     console.log(finalPassword);
+  } 
+   
+  if (finalPassword==="") {
+    alert("You need to select one of the character types in order for the password to work");
+    return reject;
   }
-  alert("Your password is ready!");
+  
+  else {alert("Your password is ready!");
+  return finalPassword; 
+  }
+  
 
-  return finalPassword;
 
-
+  
 }
+
+
+
     
