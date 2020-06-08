@@ -15,11 +15,16 @@ The purpose of this assignment was to create a random password generator that wo
 # Issues I Encountered 
 * Originally I did not know that you could create an empty variable that would be populated at a later point. This led to a lot of confusion and frustration in figuring out how to compile the user's choices.
 * I did not know where to place the code originally, and placed my code within the pre-existing function writePassword instead of creating my own function.
-* I struggled to build a for loop that correctly chose the length 
+* I struggled to build a for loop that correctly chose the length the user decided upon. I resolved this issue by discussing with my group about for loops and how they can develop output.
 
 # What I Learned 
+* How to pseudocode 
+* How to build a for loop on my own 
+* How to create empty variables that will be filled out at a later point
+* How to use a for loop that will create randomized output 
 
 # Link 
 
 # Screenshot 
-
+! [screenshot of randomized password](./assets/Screenshot-use-chose-long-password.png)
+! [screenshot of the password not generating because user didn't choose criteria](./assets/Screenshot-user-didn't-choose.png)
