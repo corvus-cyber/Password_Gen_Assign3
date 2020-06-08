@@ -26,5 +26,5 @@ The purpose of this assignment was to create a random password generator that wo
 # Link 
 
 # Screenshot 
-![screenshot of randomized password](./assets/Screenshot-use-chose-long-password.png)
-![screenshot of the password not generating because user didn't choose criteria](./assets/Screenshot-user-didn't-choose.png)
+![screenshot of randomized password](./Assets/Screenshot-use-chose-long-password.png)
+![screenshot of the password not generating because user didn't choose criteria](./Assets/Screenshot-user-didn't-choose.png)
