@@ -28,6 +28,6 @@ https://corvus-cyber.github.io/Password_Gen_Assign3/
 
 
 # Screenshot 
-![screenshot of random password generator operating](./Assets/working-screenshot.png)
-![screenshot of console log showing how the password develops](./Assets/consolelog-screenshot.png)
-![screenshot of the app alerting user that they didn't choose any criteria](./Assets/no-choices-screenshot.png)
+![screenshot of random password generator operating](./Assets/images/working-screenshot.png)
+![screenshot of console log showing how the password develops](./Assets/images/consolelog-screenshot.png)
+![screenshot of the app alerting user that they didn't choose any criteria](./Assets/images/no-choices-screenshot.png)
