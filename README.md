@@ -24,6 +24,8 @@ The purpose of this assignment was to create a random password generator that wo
 * How to use a for loop that will create randomized output 
 
 # Link 
+https://corvus-cyber.github.io/Password_Gen_Assign3/
+
 
 # Screenshot 
 ![screenshot of random password generator operating](./Assets/working-screenshot.png)
