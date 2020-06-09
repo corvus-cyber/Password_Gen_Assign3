@@ -33,7 +33,7 @@ function createPassword() {
 
   //Password length question
   var passwordLength = prompt("How many characters do you want for you password? Note: Must be between 8 to 128.") 
-  if (passwordLength > 7 && (passwordLength < 129)) {
+  if (passwordLength >= 8 && (passwordLength <= 128)) {
     console.log(passwordLength) } 
     else {alert("Choose a length that is between 8 to 128 characters");
     return reject;
